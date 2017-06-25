@@ -25,21 +25,29 @@ namespace TalkNotesBack
     [DataContract]
     public class TalkNote
     {
-        bool boolValue = true;
-        string stringValue = "Hello ";
+        private int _talkNoteID;
+        private string _title;
+        private string _body;
 
         [DataMember]
-        public bool BoolValue
+        public int TalkNoteID
         {
-            get { return boolValue; }
-            set { boolValue = value; }
+            get { return _talkNoteID; }
+            set { _talkNoteID = value; }
         }
 
         [DataMember]
-        public string StringValue
+        public string Title
         {
-            get { return stringValue; }
-            set { stringValue = value; }
+            get { return _title; }
+            set { _title = value; }
+        }
+
+        [DataMember]
+        public string Body
+        {
+            get { return _body; }
+            set { _body = value; }
         }
     }
 }
