@@ -18,4 +18,4 @@ RUN Remove-Website -Name 'Default Web Site'; `
 
 COPY TalkNotesBack\bin\Release\PublishOutput TalkNotesBack
 
-
+ENTRYPOINT ["C:\\ServiceMonitor.exe", "w3svc"]
