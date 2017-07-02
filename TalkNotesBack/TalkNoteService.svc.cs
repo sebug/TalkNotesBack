@@ -14,7 +14,13 @@ namespace TalkNotesBack
     {
         public List<TalkNote> GetAll()
         {
-            return new List<TalkNote>();
+            return new List<TalkNote>()
+            {
+                new TalkNote()
+                {
+                    Title = "Talk Note " + new Random().Next(100)
+                }
+            };
         }
 
         public TalkNote GetTalkNoteByID(int talkNoteID)
