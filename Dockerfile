@@ -33,7 +33,7 @@ RUN Copy-Item *.svc C:\Published
 
 RUN Copy-Item web.config C:\Published
 
-FROM microsoft/iis
+FROM microsoft/iis:windowsservercore-10.0.14393.1480
 SHELL ["powershell", "-command"]
 
 # Install ASP.NET
